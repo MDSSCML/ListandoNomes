@@ -1,0 +1,72 @@
+nav {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    background: linear-gradient(0, black, green);
+    padding-top: 0.2em;
+    padding-bottom: 0.6em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+header {
+    background: linear-gradient(white, green);
+    padding-bottom: 1em;
+    margin-top: 2em;
+}
+
+input[id|="iadd"]:hover {
+    border: 2px double green;
+}
+
+input[id|="iremove"]:hover {
+    border: 2px double red;
+}
+
+input[id|="iconsulta"]:hover {
+    border: 2px double rgb(112, 112, 241);
+}
+
+input[id|="ilista"]:hover {
+    border: 2px double blue;
+}
+
+.col-md-5 {
+    border: 2px double green;
+    border-radius: 5%;
+    box-shadow: 0px 0px 12px;
+    padding-bottom: 1.45rem;
+}
+
+footer {
+    background: linear-gradient(green, black);
+    padding-top: 2.0em;
+}
+
+p {
+    padding-bottom: 1em;
+    text-decoration: underline;
+    letter-spacing: 2px;
+}
+
+@media screen and (max-width:769px) {
+    .hidde {
+        display: none;
+    }
+}
+
+@media screen and (max-width:206px) {
+    .direito {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.direito {
+    display: flex;
+    justify-content: space-between;
+}
+
+#aviso {
+    color: red;
+    font-weight: bold;
+}

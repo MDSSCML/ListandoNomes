@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+    <script src="js/listandoNomes.js"></script>
+    <link href="css/listandoNomes.css" rel="stylesheet">
+
+    <title>Lista</title>
+</head>
+
+<body>
+    <nav>
+        <h1 class="text-center text-white">Listando Nomes</h1>
+    </nav>
+    <header>
+        <div class="container">
+            <div class="row d-flex justify-content-between">
+                <div class="col-md-5 ">
+                    <label for="iadd"></label>
+                    <input type="text" id="iadd" placeholder="Adicionar" class="form-control mt-5" required />
+                    <button type="button" onclick="acao()" class="btn btn-success mt-2"><span
+                            class="glyphicon glyphicon-plus"></span></button>
+                    <label for="iremove"></label>
+                    <input type="text" id="iremove" placeholder="Remover" class="form-control mt-5" />
+                    <button type="button" onclick="remocao()" class="btn btn-danger mt-2"><span
+                            class="glyphicon glyphicon-trash"></span></button>
+
+                    <label for="iconsulta"></label>
+                    <input type="text" id="iconsulta" placeholder="Consultar" class="form-control mt-5" />
+                    <button type="button" onclick="consulta()" class="btn btn-info mt-2"><span
+                            class="glyphicon glyphicon-user"></span></button>
+
+                    <label for="ilista"></label>
+                    <input type="text" id="ilista" placeholder="Lista" class="form-control mt-5" disabled />
+                    <div class="direito">
+                        <button type="button" onclick="amostra()" class="btn btn-primary mt-2 "><span
+                                class="glyphicon glyphicon-list-alt"></span></button>
+
+                        <button type="button" onclick="limpaLista()" class="btn btn-danger mt-2 remove">Limpar lista
+                            <span class="glyphicon glyphicon-remove"></span></button>
+                    </div>
+                </div>
+                <div class="col-md-5 fixo">
+                    <h3 id="aviso" class="text-center"></h3>
+                    <h3 id="ler" class="text-center"></h3>
+                    <h3 id="ler2" class="text-center"></h3>
+                    <h3 id="ler1"></h3>
+                    <h3 id="ler3" class="text-center"></h3>
+                    <h3 id="ler4" class="text-center"></h3>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-between hidde">
+                <div class="col-md-5 hidde"></div>
+                <div class="col-md-5 hidde"></div>
+            </div>
+        </div>
+    </header>
+    <footer>
+        <div class="container preto">
+            <div class="row">
+                <div class="col">
+                    <p class="text-white text-center">Márcio Trovão</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
