@@ -58,3 +58,7 @@ mySet.values();
 _O método values() retorna um novo objeto Iterator que contem os valores para cada elemento dentro do objeto Set por ordem de inserção._
 
 _O método keys() é um alias desse método (por similaridade com os objetos Map); ele se comporta exatamente da mesma forma e retorna os valores dos elementos do Set._
+
+
+>Para o correto funcionamento:
+_Bootstrap_, _javascript_, _Jquery_
